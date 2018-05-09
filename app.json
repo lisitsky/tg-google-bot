@@ -1,11 +1,25 @@
 {
-  "name":"Advanced App",
+  "name":"Telegram Google bot",
+  "description": "Telegram Google bot allows to you to perform simple search in Google via Telegram if Google is not available directly",
+  "keywords": [
+    "google",
+    "telegram",
+    "golang"
+  ],
+  "repository": "https://github.com/lisitsky/tg-google-bot",
   "env":{
-    "HEROKU_APP_NAME": {
+    "TELEGRAMBOT_TOKEN": {
+      "description": "Your bot secret key in form `NNNNNNN:$0meR@nd0mChars`. If you have no one, please, obtain it with https://t.me/BotFather",
       "required": true
     },
-    "HEROKU_PARENT_APP_NAME": {
-      "required": true
+    "SECRET_TOKEN": {
+      "description": "A secret key for verifying that requests are coming from telegram servers",
+      "generator": "secret"
     }
-  }
+  },
+  "buildpacks": [
+    {
+      "url": "https://github.com/heroku/heroku-buildpack-go.git"
+    }
+  ]
 }
