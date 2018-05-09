@@ -6,6 +6,8 @@ type Telegramer interface {
 	Send(c tgbotapi.Chattable) (tgbotapi.Message, error)
 	GetUpdatesChan(config tgbotapi.UpdateConfig) (tgbotapi.UpdatesChannel, error)
 	SetWebhook(config tgbotapi.WebhookConfig) (tgbotapi.APIResponse, error)
+	ListenForWebhook(string) tgbotapi.UpdatesChannel
+	GetWebhookInfo() (tgbotapi.WebhookInfo, error)
 }
 
 type Task struct {
@@ -22,8 +24,3 @@ type Result struct {
 	url         string
 	pingbackURL string
 }
-
-//type Reply struct {
-//}
-
-///////////

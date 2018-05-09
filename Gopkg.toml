@@ -20,3 +20,10 @@
 #  name = "github.com/x/y"
 #  version = "2.4.0"
 
+### Heroku deploy
+[metadata.heroku]
+  root-package = "github.com/lisitsky/tg-google-bot"
+  go-version = "go1.10"
+  #install = [ "./cmd/...", "./foo" ]
+  ensure = "true"
+  #additional-tools = ["github.com/mattes/migrate"]
