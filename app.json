@@ -21,6 +21,7 @@
       "required": true
     }
   },
+  "labs": ["runtime-dyno-metadata"],
   "buildpacks": [
     {
       "url": "https://github.com/heroku/heroku-buildpack-go.git"
