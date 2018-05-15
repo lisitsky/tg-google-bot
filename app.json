@@ -17,6 +17,7 @@
       "generator": "secret"
     },
     "HEROKU_APP_NAME": {
+      "description": "Full address of your heroku app. Should contain your app name + '.herokuapp.com' suffix. ",
       "required": true
     }
   },
