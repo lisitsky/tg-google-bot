@@ -91,6 +91,9 @@ func startTelegram() (updateChan tgbotapi.UpdatesChannel, err error) {
 	// work via webhook
 	webhookHost := os.Getenv("TELEGRAMBOT_WEBHOOK_HOST")
 	if webhookHost != "" {
+		if !strings.Contains(webhookHost, ".") {
+			webhookHost += ".herokuapp.com"
+		}
 		err = setWebhook(fmt.Sprintf("https://%v/%s", webhookHost, token))
 		if err != nil {
 			log.Fatalf("Error setting webhook: %v", err)
