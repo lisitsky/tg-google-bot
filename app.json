@@ -16,7 +16,7 @@
       "description": "A secret key for verifying that requests are coming from telegram servers",
       "generator": "secret"
     },
-    "HEROKU_APP_NAME": {
+    "TELEGRAMBOT_WEBHOOK_HOST": {
       "description": "Full address of your heroku app. Should contain your app name + '.herokuapp.com' suffix. ",
       "required": true
     }

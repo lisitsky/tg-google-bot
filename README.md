@@ -10,9 +10,10 @@ How to deploy to Heroku?
 * Press button and login/sign up to Heroku 
 
 * In the form:
-    * leave `app name` field empty
+    * set `app name` to some random app name like `happy-dinosaur-4253452`
     * paste bot token to `TELEGRAMBOT_TOKEN` field
+    * copy value from `app name` field to `TELEGRAMBOT_WEBHOOK_HOST` field
 
 * Press `Deploy app` button
 
-* Profit! Open your newly created bot and ask him something
+* Profit! Open your newly created bot and ask it something.
