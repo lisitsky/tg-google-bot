@@ -15,6 +15,9 @@
     "SECRET_TOKEN": {
       "description": "A secret key for verifying that requests are coming from telegram servers",
       "generator": "secret"
+    },
+    "HEROKU_APP_NAME": {
+      "required": true
     }
   },
   "buildpacks": [
